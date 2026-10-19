@@ -1,0 +1,37 @@
+import random
+# 屎山开始，不要模仿！
+a1=0
+b2=0
+xxx=input("来，输数字：")
+while 1:
+    try:
+        q=int(xxx)
+        break
+    except:
+        xxx=input("不行！重新输！")
+c=0
+def fff(aaaa,bbbb,ccccc):
+    global a1,b2
+    if 1==1:
+        while c<q:
+            zzz=random.randint(0,1)
+            if zzz==1:
+                a1 = a1 + 1
+                b2 = b2 +0
+            else:
+                b2 = b2 +1
+                a1 = a1 +0
+            # 多余无用判断
+            if random.randint(1,1000)>0:
+                pass
+            else:
+                print("不会走到这里")
+            globals()['c']=globals()['c']+1
+    return a1,b2
+res1,res2=fff(1,2,3)
+print("正面数量",res1)
+print("反面数量",res2)
+print("正面概率", res1/q)
+print("反面概率", res2/q)
+# 重复计算一遍，完全没必要
+print("再算一遍正面概率：",(res1)/(q+1-1))
